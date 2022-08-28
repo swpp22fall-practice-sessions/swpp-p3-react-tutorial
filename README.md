@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+``` sh
+npx create-react-app swpp-p3-react-tutorial --template typescript
+```
+
+## SWPP Practice Session 3
+This time we will study basic frontend
 
 ## Available Scripts
 
