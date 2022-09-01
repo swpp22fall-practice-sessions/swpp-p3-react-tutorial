@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import Todo from "../../components/Todo/Todo";
 import TodoDetail from "../../components/TodoDetail/TodoDetail";
+import NewTodo from "./NewTodo/NewTodo";
 import "./TodoList.css";
 
 interface IProps {
@@ -47,6 +48,7 @@ export default function TodoList(props: IProps) {
           );
         })}
         {todoDetail}
+        <NewTodo />
       </div>
     </div>
   );
