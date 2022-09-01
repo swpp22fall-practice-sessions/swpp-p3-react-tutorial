@@ -1,4 +1,4 @@
-import "./Todo.css"
+import "./Todo.css";
 
 interface IProps {
   title: string;
