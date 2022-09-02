@@ -1,10 +1,17 @@
 import "./App.css";
 import TodoList from "./containers/TodoList/TodoList"; // can omit.js
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NewTodo from "./containers/TodoList/NewTodo/NewTodo";
 
 function App() {
   return (
     <div className="App">
-      <TodoList title={"My TODOs!"} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/todos" element={<TodoList title={"My TODOs!"} />} />
+          <Route path="/new-todo" element={<NewTodo />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
