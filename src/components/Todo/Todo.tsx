@@ -9,9 +9,9 @@ interface IProps {
 const Todo = (props: IProps) => { 
     return ( 
         <div className="Todo"> 
-            <div className={`text ${props.done && "done"}`} onClick={props.clicked}> 
-                { props.title }
-            </div> 
+        <div className={`text ${props.done && "done"}`} onClick={props.clicked}> 
+            { props.title }
+        </div> 
         { props.done && <div className="done-mark">&#x2713;</div> }
         </div> 
     ); 
