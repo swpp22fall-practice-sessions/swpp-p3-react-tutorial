@@ -37,8 +37,7 @@ export default function NewTodo(){
           onChange={
             (event) => setContent(event.target.value)
           }
-        >
-        </textarea>
+        />
         <button onClick={postTodoHandler}>Submit</button>
       </div>
     )
