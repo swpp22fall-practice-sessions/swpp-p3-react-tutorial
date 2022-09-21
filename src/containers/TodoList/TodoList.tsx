@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import "./TodoList.css";
 import Todo from "../../components/Todo/Todo";
+import TodoDetail from "../../components/TodoDetail/TodoDetail";
 
 type TodoType = { id: number; title: string; content: string; done: boolean };
 
@@ -16,6 +17,12 @@ export default function TodoList(props: IProps) {
     { id: 3, title: "Dinner", content: "eat dinner", done: false },
   ]);
   const [selectedTodo, setSelectedTodo] = useState<TodoType | null>(null);
+
+  const todoDetail = useMemo(() => {
+    return selectedTodo ? (
+      <TodoDetail title={selectedTodo.title} content={selectedTodo.content} />
+    ) : null;
+  }, [selectedTodo]);
 
   const clickTodoHandler = (td: TodoType) => {
     if (selectedTodo === td) {
@@ -39,6 +46,7 @@ export default function TodoList(props: IProps) {
             />
           );
         })}
+        {todoDetail}
       </div>
     </div>
   );
