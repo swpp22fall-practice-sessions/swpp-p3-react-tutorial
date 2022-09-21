@@ -43,7 +43,7 @@ export default function TodoList(props: IProps) {
             <div className="title">{title}</div>
             <div className="todos">
             {todos.map((td) => {
-                return <Todo title={td.title} done={td.done} clicked={() => clickTodoHandler(td)} />;            
+                return <Todo key={td.id} title={td.title} done={td.done} clicked={() => clickTodoHandler(td)} />;            
             })}
             {todoDetail}
             <NewTodo/>
