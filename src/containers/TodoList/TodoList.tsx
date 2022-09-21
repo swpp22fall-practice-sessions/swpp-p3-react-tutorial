@@ -3,7 +3,7 @@ import "./TodoList.css";
 import Todo from '../../components/Todo/Todo';
 import TodoDetail from "../../components/TodoDetail/TodoDetail";
 import NewTodo from "./NewTodo/NewTodo";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 type TodoType = { id: number; title: string; content: string; done: boolean;};
 
@@ -46,7 +46,7 @@ export default function TodoList(props: IProps) {
                 return <Todo title={td.title} done={td.done} clicked={() => clickTodoHandler(td)} />;            
             })}
             {todoDetail}
-            <NewTodo></NewTodo>
+            <NewTodo/>
             <NavLink to="/new-todo" >New Todo</NavLink>            
             </div>
             </div>
