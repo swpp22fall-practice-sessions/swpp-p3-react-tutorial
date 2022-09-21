@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="todos" element={<TodoList title={"My TODOs!"} />} />
-          <Route path="new-todo" element={<NewTodo />} />
+          <Route path="/todos" element={<TodoList title={"My TODOs!"} />} />
+          <Route path="/new-todo" element={<NewTodo />} />
           <Route path="/" element={<Navigate replace to={"/todos"} />} />
           <Route path="*" element={<h1>Not Found</h1>}/> 
         </Routes>
