@@ -46,7 +46,6 @@ export default function TodoList(props: IProps) {
                 return <Todo key={td.id} title={td.title} done={td.done} clicked={() => clickTodoHandler(td)} />;            
             })}
             {todoDetail}
-            <NewTodo/>
             <NavLink to="/new-todo" >New Todo</NavLink>            
             </div>
             </div>
