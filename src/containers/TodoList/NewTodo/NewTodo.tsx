@@ -21,9 +21,9 @@ export default function NewTodo() {
             <div className="NewTodo">
                 <h1>Add a Todo</h1>
                 <label>Title</label>
-                <input type="text" value={title} onChange={ event => setTitle(event.target.value) } />
+                <input type="text" value={title} onChange={event => setTitle(event.target.value)} />
                 <label>Content</label>
-                <textarea rows={4} value={content} onChange={ event => setContent(event.target.value) } />
+                <textarea rows={4} value={content} onChange={event => setContent(event.target.value)} />
                 <button onClick={() => postTodoHandler()}>Submit</button>
             </div>
         );

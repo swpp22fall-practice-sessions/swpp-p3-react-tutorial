@@ -33,7 +33,7 @@ export default function TodoList(props: IProps) {
     };
     const todoDetail = useMemo(() => {
         return selectedTodo ? (
-            <TodoDetail title={ selectedTodo.title } content={ selectedTodo.content } />
+            <TodoDetail title={selectedTodo.title} content={selectedTodo.content} />
         ) : null;
     }, [selectedTodo]);
 
