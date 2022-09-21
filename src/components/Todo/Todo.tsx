@@ -1,1 +1,20 @@
-export {};
+import "./Todo.css";
+
+interface IProps {
+    title: string;
+    clicked?: React.MouseEventHandler<HTMLDivElement>;
+    done: boolean;
+}
+
+const Todo = (props: IProps) => {
+    return (
+        <div className="Todo">
+            <div className={ `text ${props.done && "done"}` } onClick={props.clicked}>
+                {props.title}
+            </div>
+            {props.done && <div className="done-mark">✓</div>}
+        </div>
+    );
+};
+
+export default Todo;
