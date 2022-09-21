@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "./TodoList.css";
 import Todo from "../../components/Todo/Todo";
 
 type TodoType = { id: number; title: string; content: string; done: boolean };

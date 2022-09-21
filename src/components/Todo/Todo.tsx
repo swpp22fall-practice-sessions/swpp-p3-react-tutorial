@@ -1,8 +1,11 @@
+import "./Todo.css";
+
 interface IProps {
   title: string;
   clicked?: React.MouseEventHandler<HTMLDivElement>; // Defined by React
   done: boolean;
 }
+
 const Todo = (props: IProps) => {
   return (
     <div className="Todo">
