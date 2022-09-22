@@ -1,5 +1,4 @@
 import "./Todo.css"
-import "./TodoList.css"
 
 interface IProps {
     title: string;

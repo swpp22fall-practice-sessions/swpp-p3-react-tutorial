@@ -7,7 +7,6 @@ import TodoDetail from "../../components/TodoDetail/TodoDetail";
 import NewTodo from "./NewTodo/NewTodo";
 import { useMemo } from "react";
 import { NavLink } from "react-router-dom";
-import "./Todo.css"
 
 
 interface IProps {
